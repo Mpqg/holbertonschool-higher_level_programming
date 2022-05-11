@@ -2,5 +2,5 @@
 
 
 def number_keys(a_dictionary):
-    for i in sorted(a_dictionary):
+    for i in sorted(a_dictionary.items()):
         print("{}: {}".format(i, a_dictionary[i]))
