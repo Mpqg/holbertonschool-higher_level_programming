@@ -54,8 +54,9 @@ class Rectangle:
 
     def __str__(self):
         """Print the rectangle."""
+        if self.__width == 0 or self.__height == 0:
+            return("")
         for x in range(0, self.__width):
             [print("#", end="") for y in range(self.__height)]
             print("")
-        if self.__width or self.__height == 0:
-            print("")
+        return("")
