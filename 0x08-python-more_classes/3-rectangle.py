@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# 1-rectangle.py
 """Define a class rectangle."""
 
 
@@ -53,10 +52,13 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Print the rectangle."""
-        if self.__width == 0 or self.__height == 0:
-            return("")
-        for x in range(0, self.__width):
-            [print("#", end="") for y in range(self.__height)]
-            print("")
-        return("")
+        """ __str__ method to print the Rectangle """
+        result = ""
+        if self.height == 0 or self.width == 0:
+            return (result)
+        for x in range(self.height):
+            for y in range(self.width):
+                result += "#"
+            result += "\n"
+        result = result[0:-1]
+        return (result)
