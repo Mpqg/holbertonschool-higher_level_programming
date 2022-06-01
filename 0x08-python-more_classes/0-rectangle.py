@@ -3,4 +3,5 @@
 
 
 class Rectangle:
+    """ Return an instance of rectangle"""
     pass
