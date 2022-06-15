@@ -19,40 +19,56 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Get width"""
+        """
+		Get width
+		"""
         return self.__width
 
     @property
     def height(self):
-        """Get height"""
+        """
+		Get height
+		"""
         return self.__height
 
     @property
     def x(self):
-        """Get x"""
+        """
+		Get x
+		"""
         return self.__x
 
     @property
     def y(self):
-        """Get y"""
+        """
+		Get y
+		"""
         return self.__y
 
     @width.setter
     def width(self, value):
-        """Set width"""
+        """
+		Set width
+		"""
         self.__width = value
 
     @height.setter
     def height(self, value):
-        """Set height"""
+        """
+		Set height
+		"""
         self.__height = value
 
     @x.setter
     def x(self, value):
-        """Set x"""
+        """
+		Set x
+		"""
         self.__x = value
 
     @y.setter
     def y(self, value):
-        """Set y"""
+        """
+		Set y
+		"""
         self.__y = value
