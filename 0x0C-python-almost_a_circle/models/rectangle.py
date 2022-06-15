@@ -1,18 +1,19 @@
-#!/usr/bin/python 3
+#!/usr/bin/python3
 """
 Base Rectangle
 """
-
-
 from models.base import Base
 
 
 class Rectangle(Base):
     """
-    def __init__(self,width,height, x=0,y=0, id=None)
+    Class Rectangle
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        Initialization
+        """
         super().__init__(id)
         self.width = width
         self.height = height
@@ -22,55 +23,55 @@ class Rectangle(Base):
     @property
     def width(self):
         """
-		Get width
-		"""
+        Get width
+        """
         return self.__width
 
     @property
     def height(self):
         """
-		Get height
-		"""
+        Get height
+        """
         return self.__height
 
     @property
     def x(self):
         """
-		Get x
-		"""
+        Get x
+        """
         return self.__x
 
     @property
     def y(self):
         """
-		Get y
-		"""
+        Get y
+        """
         return self.__y
 
     @width.setter
-    def width(self, value):
+    def width(self, new_data):
         """
-		Set width
-		"""
-        self.__width = value
+        Set width
+        """
+        self.__width = new_data
 
     @height.setter
-    def height(self, value):
+    def height(self, new_data):
         """
-		Set height
-		"""
-        self.__height = value
+        Set height
+        """
+        self.__height = new_data
 
     @x.setter
-    def x(self, value):
+    def x(self, new_data):
         """
-		Set x
-		"""
-        self.__x = value
+        Set x
+        """
+        self.__x = new_data
 
     @y.setter
-    def y(self, value):
+    def y(self, new_data):
         """
-		Set y
-		"""
-        self.__y = value
+        Set y
+        """
+        self.__y = new_data
