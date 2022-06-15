@@ -1,3 +1,4 @@
+#!/usr/bin/python 3
 """
 Unit test for the Rectangle class
 """
