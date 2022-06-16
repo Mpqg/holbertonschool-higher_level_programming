@@ -119,7 +119,7 @@ class Rectangle(Base):
         Prints the rectangle details
         """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                                                        self.x,
-                                                        self.y,
-                                                        self.width,
-                                                        self.height)
+                                                       self.x,
+                                                       self.y,
+                                                       self.width,
+                                                       self.height)
