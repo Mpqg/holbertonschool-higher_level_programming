@@ -50,13 +50,13 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, new_data):
-    	"""
+        """
         Set width
         """
-		if type(new_data) is not int:
-			raise TypeError("width must be an integer")
-		if new_data <= 0:
-			raise ValueError("width must be > 0")
+        if type(new_data) is not int:
+            raise TypeError("width must be an integer")
+        if new_data <= 0:
+            raise ValueError("width must be > 0")
         self.__width = new_data
 
     @height.setter
@@ -64,10 +64,10 @@ class Rectangle(Base):
         """
         Set height
         """
-		if type(new_data) is not int:
-        	raise TypeError("height must be an integer")
-		if new_data <= 0:
-			raise ValueError("height must be > 0")
+        if type(new_data) is not int:
+            raise TypeError("height must be an integer")
+        if new_data <= 0:
+            raise ValueError("height must be > 0")
         self.__height = new_data
 
     @x.setter
@@ -75,10 +75,10 @@ class Rectangle(Base):
         """
         Set x
         """
-		if type(new_data) is not int:
-			raise TypeError("x must be an integer")
+        if type(new_data) is not int:
+            raise TypeError("x must be an integer")
         if new_data < 0:
-			raise TypeError("x must be >= 0")
+            raise TypeError("x must be >= 0")
         self.__x = new_data
 
     @y.setter
@@ -86,8 +86,8 @@ class Rectangle(Base):
         """
         Set y
         """
-    	if type(new_data) is not int:
-			raise TypeError("y must be an integer")
-    	if new_data < 0:
-			raise TypeError("y must be >= 0")
+        if type(new_data) is not int:
+            raise TypeError("y must be an integer")
+        if new_data < 0:
+            raise TypeError("y must be >= 0")
         self.__y = new_data
