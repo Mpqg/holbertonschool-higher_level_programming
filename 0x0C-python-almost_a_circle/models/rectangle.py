@@ -100,13 +100,17 @@ class Rectangle(Base):
 
     def display(self):
         """
-        Prints the stdout with the character #
+        Prints the stdout with the character # taking in consideration x & y
         """
         result = ""
         if self.height == 0 or self.width == 0:
             print(result)
             return
+        for x in range(self.x):
+            print("")
         for x in range(self.height):
+            for y in range(self.y):
+                print(" ", end="")
             for y in range(self.width):
                 result += "#"
             result += "\n"
