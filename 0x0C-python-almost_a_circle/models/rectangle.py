@@ -127,7 +127,7 @@ class Rectangle(Base):
 
     def update(self, *args):
         """
-        Print args
+        Override instance of rectangle
         """
         if args and len(args) > 0:
             index = 0
