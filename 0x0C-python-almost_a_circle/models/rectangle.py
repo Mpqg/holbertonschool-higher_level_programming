@@ -161,11 +161,11 @@ class Rectangle(Base):
                 if k == "y":
                     self.y = v
                 if k == "id":
-                    if arg is None:
+                    if v is None:
                         self.__init__(
                             self.width,
                             self.height,
                             self.x,
                             self.y)
                     else:
-                        self.id = arg
+                        self.id = v
