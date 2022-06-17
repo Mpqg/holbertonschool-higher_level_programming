@@ -125,7 +125,7 @@ class Rectangle(Base):
                                                        self.width,
                                                        self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Override instance of rectangle
         """
@@ -150,3 +150,22 @@ class Rectangle(Base):
                 if index == 4:
                     self.y = arg
                 index += 1
+        elif kwargs and len(kwargs) > 0:
+            for k, v in kwargs.items():
+                if k == "width":
+                    self.width = v
+                if k == "height":
+                    self.height = v
+                if k == "x":
+                    self.x = v
+                if k == "y":
+                    self.y = v
+                if k == "id":
+                    if arg is None:
+                        self.__init__(
+                            self.width,
+                            self.height,
+                            self.x,
+                            self.y)
+                    else:
+                        self.id = arg
