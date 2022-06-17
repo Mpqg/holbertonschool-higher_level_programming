@@ -124,3 +124,29 @@ class Rectangle(Base):
                                                        self.y,
                                                        self.width,
                                                        self.height)
+
+    def update(self, *args):
+        """
+        Print args
+        """
+        if args and len(args) > 0:
+            index = 0
+            for arg in args:
+                if index == 0:
+                    if arg is None:
+                        self.__init__(
+                            self.width,
+                            self.height,
+                            self.x,
+                            self.y)
+                    else:
+                        self.id = arg
+                if index == 1:
+                    self.width = arg
+                if index == 2:
+                    self.height = arg
+                if index == 3:
+                    self.x = arg
+                if index == 4:
+                    self.y = arg
+                index += 1
