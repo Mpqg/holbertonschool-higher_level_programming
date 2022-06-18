@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Class base 
+Class base
 """
 import json
 import csv
